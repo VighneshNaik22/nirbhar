@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIRBHAR</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div>
+        <h1>NIRBHAR</h1>
+      </div>
+      <div class="status-row">
+        <span>Active SOP Pack: <strong id="activePack">campus</strong></span>
+        <span id="llmBadge">LLM offline - template mode</span>
+      </div>
+    </div>
+    <div class="banner">Human approval required - NIRBHAR never acts autonomously</div>
+
+    <div class="layout">
+      <aside class="panel">
+        <h2>Live Evidence Feed</h2>
+        <div id="evidenceFeed"></div>
+      </aside>
+
+      <main class="panel wide">
+        <h2>Incident List</h2>
+        <div id="incidentList"></div>
+      </main>
+    </div>
+
+    <div class="layout lower">
+      <section class="panel wide">
+        <h2>Incident Detail</h2>
+        <div id="incidentDetail"></div>
+      </section>
+      <aside class="panel">
+        <h2>Approval Bar</h2>
+        <textarea id="approvalReason" placeholder="Reason"></textarea>
+        <div class="button-row">
+          <button data-action="approve">Approve</button>
+          <button data-action="modify">Modify</button>
+          <button data-action="reject">Reject</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="layout lower">
+      <section class="panel wide">
+        <h2>Audit Trail</h2>
+        <button id="verifyAudit">Verify Integrity</button>
+        <div id="auditTrail"></div>
+      </section>
+      <aside class="panel">
+        <h2>Demo Controls</h2>
+        <button id="loadDemo">Load Demo</button>
+        <button id="resetDemo">Reset Demo</button>
+      </aside>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

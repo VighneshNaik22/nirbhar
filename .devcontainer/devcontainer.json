@@ -1,0 +1,13 @@
+{
+  "name": "nirbhar",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+  "forwardPorts": [8000],
+  "postCreateCommand": "python -m pip install -r requirements.txt && chmod +x scripts/setup_ollama.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}
